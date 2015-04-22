@@ -18,7 +18,7 @@ int main()
 	printf("생성된 쓰레드의 핸들 : %d\n", hThread);
 	printf("생성된 쓰레드의 ID : %d\n", dwThreadID);
 
-	while (true)
+	while (1)
 	{
 		scanf("%d", &input);
 
@@ -37,7 +37,7 @@ int main()
 
 unsigned int WINAPI ThreadFunction(void *arg)
 {
-	while (true)
+	while (1)
 	{
 		if (flag)
 			count++;

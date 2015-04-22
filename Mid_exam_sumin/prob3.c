@@ -10,7 +10,7 @@ int gcd(int a, int b);
 int main(void) {
 	int count, num1, num2, num3, num4, num5;
 	
-	while (true)
+	while (1)
 	{
 		printf("최대공약수 구할 갯수 입력(2~5)\n");
 		scanf("%d", &count);

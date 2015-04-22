@@ -21,7 +21,7 @@ int main()
 	ULARGE_INTEGER Cycle, OldCycle;
 	int input;
 
-	while (true)
+	while (1)
 	{
 		scanf("%d", &input);
 
