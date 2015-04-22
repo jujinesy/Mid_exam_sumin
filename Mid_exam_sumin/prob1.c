@@ -7,7 +7,8 @@ int prime['ab'];
 
 void trial(int input, int *result)
 {
-	for (int getout = 0; getout == 0; getout++)
+	int getout, b, isprime;
+	for (getout = 0; getout == 0; getout++)
 	{
 		if (input % 2 == 0 && input != 2)
 		{
@@ -15,12 +16,12 @@ void trial(int input, int *result)
 			printf("%d는 소수 아님\n", input);
 			continue;
 		}
-		bool isprime = true;
-		for (int b = 2; b*b <= input; b++)
+		isprime = 1;
+		for (b = 2; b*b <= input; b++)
 		{
 			if (input%b == 0)
 			{
-				isprime = false;
+				isprime = 0;
 				break;
 			}
 		}
@@ -40,13 +41,13 @@ void trial(int input, int *result)
 int main()
 {
 	int result;
-	int low, high;
+	int low, high, i;
 
 	printf("두 숫자를 입력하세요. 예)12 67\n");
 	scanf("%d %d", &low, &high);
 
 
-	for (int i = high; i >= low; i--)
+	for (i = high; i >= low; i--)
 	{
 		trial(i, &result);
 		if (result == 1)
